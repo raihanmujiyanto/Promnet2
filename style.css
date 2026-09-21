@@ -42,28 +42,28 @@ nav{
     padding:40px;
     flex-wrap: wrap;
 }
-
 .card img{
     height: 240px;
     width: 240px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
-
 .card-profile{
     background-image:linear-gradient(45deg, rgb(248, 141, 159),skyblue);
-    color: black;
+    color: rgb(52, 49, 49);
     padding: 20px 20px;
-    font-size: medium;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 20px;
 
     transition-property: background-image;
     transition-duration: 4s;
     transition-timing-function: ease;
     transition-delay: 2s;
 }
-
 .card-profile:hover{
     background-image:linear-gradient(45deg, rgb(183, 115, 126),rgb(93, 141, 160));
     width: 400px;
@@ -116,7 +116,6 @@ nav{
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -149,10 +148,10 @@ nav{
 
 .data-diri {
     width: 90%;
-    margin: 30px auto;
+    margin: 30px ;
 }
 .data-diri h2 {
-    color: #333;
+    color: #3d3939;
     margin-bottom: 15px;
 }
 .data-diri table {
@@ -162,12 +161,12 @@ nav{
 }
 .data-diri td {
     padding: 12px 15px;
-    border: 1px solid #ccc;
-    color: #333;
+    border: 1px solid #dcd7d7;
+    color: #343131;
 }
 .data-diri tr:first-child td {
     background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
-    color: white;
+    color: rgb(54, 51, 51);
     padding: 14px 15px;
 }
 .data-diri td:first-child {
@@ -181,7 +180,7 @@ nav{
 
 
 .card-hobi h2 {
-    color: #232121;
+    color: #2b2828;
     margin-bottom: 20px;
 }
 .card-hobi ol {
@@ -198,7 +197,7 @@ nav{
     padding: 30px 20px;
     background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
     border-radius: 10px;
-    color: rgb(43, 40, 40);
+    color: rgb(52, 47, 47);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -210,7 +209,7 @@ nav{
     margin: 30px auto;
 }
 .pendidikan h2 {
-    color: #333;
+    color: #3b3939;
     margin-bottom: 20px;
 }
 .pendidikan ul {
@@ -242,7 +241,7 @@ nav{
 .project-card {
     width: 280px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cdc7c7;
     border-radius: 10px;
     text-align: center;
     background-image: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
@@ -257,4 +256,138 @@ nav{
 }
 .project-card p {
     line-height: 1.5;
+}
+
+
+.card-teknologi {
+    width: 90%;
+    margin: 30px auto;
+}
+.card-teknologi h2 {
+    color: #2d2b2b;
+    margin-bottom: 20px;
+}
+.card-teknologi ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+.card-teknologi li {
+    width: 23%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+    border-radius: 10px;
+    color: #343131;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.card-project {
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+    border: 1px solid #9c9797;
+}
+.card-project h2 {
+    text-align: center;
+    color: #434242;
+}
+.card-project table {
+    width: 100%;
+}
+.card-project td {
+    padding: 12px;
+    border: 1px solid #6e6b6b;
+}
+.card-project tr:first-child {
+    text-align: center;
+    background-color: white;
+}
+
+
+.card-contact {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+}
+.card-contact h2 {
+    color: #413c3c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.card-contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card-contact a {
+    color: #3a3838;
+    font-weight: bold;
+}
+
+.card-form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+}
+.card-form h2 {
+    color: #554f4f;
+}
+.card-form table {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+.card-form td {
+    padding: 8px;
+    border: 1px solid #797575;
+}
+.card-form .label {
+    width: 35%;
+    font-weight: bold;
+}
+.card-form .input {
+    width: 65%;
+}
+.card-form input[type="text"],
+.card-form input[type="email"],
+.card-form input[type="number"],
+.card-form input[type="date"],
+.card-form select,
+.card-form textarea {
+    padding: 6px;
+}
+.card-form textarea {
+    width: 90%;
+}
+.card-form input[type="submit"],
+.card-form input[type="reset"] {
+    padding: 6px 15px;
+}
+
+.card-katalog {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+}
+.card-katalog h2 {
+    color: #3b3939;
+    font-size: 28px;
+}
+.card-katalog p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card-katalog ul {
+    padding: 10px 30px;
+}
+.card-katalog li {
+    margin: 5px;
 }
