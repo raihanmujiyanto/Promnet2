@@ -12,6 +12,17 @@ nav{
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
+.headline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding:40px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;  
+}
+
 .logo{
     height: 60px;
     padding-left: 50px;
@@ -23,13 +34,6 @@ nav{
 
 }
 
-body{
-    background-image: url(assets/Background.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
 .card{
     display: flex;
     flex-direction: row;
@@ -67,9 +71,32 @@ body{
 
 .deskripsi{
     background-image:linear-gradient(45deg,rgb(248, 141, 159), skyblue) ;
-    width: 400px;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding:40px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;  
+
+    transition-property: background-image;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}
+
+.deskripsi :hover{
+    background-image:linear-gradient(45deg, rgb(183, 115, 126),rgb(93, 141, 160));
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding:40px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 
 .link-navbar a{
@@ -82,4 +109,121 @@ body{
     width: 100%;
     background-color: aliceblue;
     text-align: start;
+    border-radius: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.judul{
+    background-image: linear-gradient(45deg,rgb(248, 141, 159), skyblue);
+    width: 200px;
+    height: 50px;
+}
+
+.deskripsi-singkat{
+    background-image:linear-gradient(45deg,rgb(248, 141, 159), skyblue) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding:40px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center; 
+    border-radius: 10px;
+}
+
+.data-diri {
+    width: 90%;
+    margin: 30px auto;
+}
+.data-diri h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+.data-diri table {
+    width: 40%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+.data-diri td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.data-diri tr:first-child td {
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+    color: white;
+    padding: 14px 15px;
+}
+.data-diri td:first-child {
+    width: 30%;
+    font-weight: bold;
+}
+.data-diri a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.card-hobi h2 {
+    color: #232121;
+    margin-bottom: 20px;
+}
+.card-hobi ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.card-hobi li {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+    border-radius: 10px;
+    color: rgb(43, 40, 40);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.pendidikan {
+    width: 90%;
+    margin: 30px auto;
+}
+.pendidikan h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.pendidikan ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+.pendidikan li {
+    width: 23%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    background: linear-gradient(45deg, rgb(248, 141, 159), skyblue);
+    border-radius: 10px;
+    color: #464141;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
